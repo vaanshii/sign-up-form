@@ -8,5 +8,75 @@
 		<link rel="stylesheet" href="style.css" />
 		<script async src="script.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="content-container">
+			<section class="background-container">
+				<header class="title"><img src="" alt="" /></header>
+			</section>
+
+			<section class="sign-up-container">
+				<div class="introduction">
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+					</p>
+					<p>Sign up <span>now</span> to get started</p>
+					<p>You <span>know</span> you want to.</p>
+				</div>
+
+				<div class="form-container">
+					<p>Let's do this!</p>
+					<form class="sign-up-form">
+						<div class="form-row">
+							<label for="first-name">
+								FIRST NAME
+								<input type="text" name="firstName" id="first-name" required />
+							</label>
+
+							<label for="last-name">
+								LAST NAME
+								<input type="text" name="lastName" id="last-name" required />
+							</label>
+						</div>
+						<div class="form-row">
+							<label for="email">
+								EMAIL
+								<input type="email" name="email" id="email" required />
+							</label>
+							<label for="phone-number">
+								PHONE NUMBER
+								<input
+									type="tel"
+									name="phoneNumber"
+									id="phone-number"
+									required
+								/>
+							</label>
+							<div class="form-row">
+								<label for="password">
+									PASSWORD
+									<input type="password" name="password" id="pwd" required />
+								</label>
+								<label for="confirm-password">
+									CONFIRM PASSWORD
+									<input
+										type="password"
+										name="confirm-pass"
+										id="confirm-password"
+										required
+									/>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="button-container">
+					<button class="create-account-button">Create Account</button>
+
+					<p>Already have an account? <a href="/">Log in</a></p>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
