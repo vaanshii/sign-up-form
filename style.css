@@ -1,15 +1,57 @@
 @import url("https://fonts.cdnfonts.com/css/norse");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-    --title-font: 'Norse', sans-serif;
-    --main-font:  "Open Sans", sans-serif;
-    --main-font-size: 3rem;
+	--title-font: "Norse", sans-serif;
+	--main-font: "Open Sans", sans-serif;
+	--main-font-size: 3rem;
 
-    --main-color: #596D48;
-    --input-border-color: #E5E7EB;
-    --background-color: #f9fafb;
-    --form-color: #fff;
-    --outline-focus-color: #1d4ed8;
-    --invalid-color: #b91c1c;
+	--main-color: #596d48;
+	--input-border-color: #e5e7eb;
+	--background-color: #f9fafb;
+	--form-color: #fff;
+	--outline-focus-color: #1d4ed8;
+	--invalid-color: #b91c1c;
+}
+
+img {
+    max-width: 120px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: var(--main-font);
+}
+
+.content-container {
+	width: inherit;
+	height: inherit;
+	display: flex;
+    height: 100vh;
+}
+
+.background-container {
+	background-image: url("assets/background-image.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100vh;
+	width: 30vw;
+
+    .title {
+        width: 100%;
+        margin-top: 13rem;
+        padding: 1rem;
+        background-color: hsla(0, 0%, 0%, 0.604);
+        display: flex;
+        justify-content: center;
+    }
+    
+    h1 {
+        height: 100%;
+        font-family: var(--title-font);
+        font-size: 7rem;
+        text-align: center;
+        color: #fff;
+    }
 }
