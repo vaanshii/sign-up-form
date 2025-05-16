@@ -119,6 +119,16 @@ body {
 		border-radius: 8px;
 		font-size: 1.3rem;
 	}
+
+	input:focus {
+		outline-color: var(--outline-focus-color);
+		box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.59);
+		-webkit-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.59);
+		-moz-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.59);
+	}
+	input:valid {
+		outline-color: var(--main-color);
+	}
 }
 
 .introduction,
@@ -139,20 +149,29 @@ body {
 		border: none;
 		border-radius: 8px;
 
-        box-shadow: 9px 7px 15px -6px rgba(0,0,0,0.64);
-        -webkit-box-shadow: 9px 7px 15px -6px rgba(0,0,0,0.64);
-        -moz-box-shadow: 9px 7px 15px -6px rgba(0,0,0,0.64);
+		box-shadow: 9px 7px 15px -6px rgba(0, 0, 0, 0.64);
+		-webkit-box-shadow: 9px 7px 15px -6px rgba(0, 0, 0, 0.64);
+		-moz-box-shadow: 9px 7px 15px -6px rgba(0, 0, 0, 0.64);
 	}
 
-    p {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        font-weight: 600;
+	p {
+		margin-top: 2rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--main-color);
+		font-weight: 700;
+	}
+
+    a:hover {
+        scale: 1.02;
     }
 
-    a {
-        text-decoration: none;
-        color: var(--main-color);
-        font-weight: 700;
+    .create-account-button:hover {
+        scale: 1.02;
+        cursor: pointer;
     }
 }
