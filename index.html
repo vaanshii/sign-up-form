@@ -33,7 +33,14 @@
 						<div class="form-column">
 							<label for="first-name">
 								<span>FIRST NAME</span>
-								<input type="text" name="firstName" id="first-name" required />
+								<input
+									type="text"
+									name="firstName"
+									id="first-name"
+									required
+									minlength="2"
+									maxlength="20"
+								/>
 							</label>
 
 							<label for="email">
@@ -50,7 +57,14 @@
 						<div class="form-column">
 							<label for="last-name">
 								<span>LAST NAME</span>
-								<input type="text" name="lastName" id="last-name" required />
+								<input
+									type="text"
+									name="lastName"
+									id="last-name"
+									required
+									minlength="2"
+									maxlength="20"
+								/>
 							</label>
 
 							<label for="phone-number">
@@ -60,6 +74,8 @@
 									name="phoneNumber"
 									id="phone-number"
 									required
+									minlength="11"
+									maxlength="11"
 								/>
 							</label>
 
